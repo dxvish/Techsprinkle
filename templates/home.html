@@ -1,0 +1,18 @@
+{% extends "baseTemplate.html" %}
+{% load static %}
+{% block title %}Techsprinkle{% endblock %}
+{% block body %}
+<script src="{% static 'js/techsprinkle.js' %}"></script>
+<div ng-app="techsprinkle" ng-init="getPosts()"  ng-controller="displayBlog">
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><%currentpage%></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+{% block side-nav %}{% include "sideNav.html" %}{% endblock %}
+    <div ng-view id="mainApp" ></div>
+</div>
+{% endblock %}
+{% block footer %}{% include "footer.html" %}{% endblock %}

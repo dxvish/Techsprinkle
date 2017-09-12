@@ -1,0 +1,22 @@
+  <div class="row" ng-repeat="obj in blogObj">
+    <div class="col s12">
+        <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" height="135" src="/static/images/ironman.jpg">
+            </div>
+            <div class="card-content">
+                <span class="activator card-title "><%obj.fields.projectname%></span>
+
+            </div>
+            <div class="card-action">
+                <a ng-click="editBlog(obj.pk,obj)">Edit</a>
+                <a ng-click="deletePost(obj.pk,obj)">Delete</a>
+              </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                    <i class="material-icons right">close</i><%obj.fields.projectname%></span>
+                <p><%obj.fields.description%></p>
+            </div>
+        </div>
+    </div>
+  </div>

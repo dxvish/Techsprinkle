@@ -1,0 +1,20 @@
+{% load static %}
+<ul id="slide-out" class="side-nav fixed">
+    <li><div class="userView">
+      <div class="background">
+        <img src="{% static '/images/tech-003.jpg' %}">
+      </div>
+      <a href="#!user"><img class="circle" src="{% static '/images/codecode.jpg' %}"></a>
+      <a href="#!name"><span class="white-text name">{{request.user.first_name}}</span></a>
+      <a href="#!email"><span class="white-text email">{{request.user.email}}</span></a>
+    </div></li>
+    <li><a ng-click="blogHome()"><i class="material-icons">home</i>Home </a></li>
+      <li><div class="divider"></div></li>
+    <li><a ng-click="addNew();"><i class="material-icons">add</i> New Post</a></li>
+        <li><div class="divider"></div></li>
+    <!--<li><a class="waves-effect" href="#!"><i class="material-icons">edit</i>Edit</a></li>-->
+    <!--<li><div class="divider"></div></li>-->
+    <li><a class="waves-effect" href="/logout/"><i class="material-icons">lock</i>Logout</a></li>
+    <li><div class="divider"></div></li>
+
+</ul>

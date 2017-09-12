@@ -1,0 +1,24 @@
+.side-nav{
+width:200px !important;
+overflow-y:inherit;
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+nav {
+    background-color: #5c6bc0;
+    width: 100%;;
+}
+    .container{
+        width:initial;
+        margin-left:200px;
+        margin-right:0px;
+        overflow-x: hidden;
+    }
+#mainApp{
+    padding:20px;
+}
