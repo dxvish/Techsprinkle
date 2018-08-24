@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'TechSprinkle.wsgi.application'
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'techsprinkle',
 #         'USER': 'root',
-#         'PASSWORD': ';P@ssword',
+#         'PASSWORD': '******',
 #         'HOST': '127.0.0.1',
 #         'PORT': '3306',
 #     }
